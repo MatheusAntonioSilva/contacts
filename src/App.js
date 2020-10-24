@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import ContactList from './views/contacts/List'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full bg-gray-100">
+      <div className="px-4 md:px-10 mx-auto w-full">
+        <div className="flex flex-wrap">
+          <ContactList />
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
